@@ -8,8 +8,7 @@ load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-WEBAPP_URL = "https://example.com"
-
+web_app = WebAppInfo(url="https://trade-pulse-ai-ten.vercel.app/")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[
